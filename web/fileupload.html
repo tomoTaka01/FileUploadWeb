@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>file upload sample</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="js/vender/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>file upload sample</h1>
+                <form method="POST" action="upload" enctype="multipart/form-data">
+                    <input type="file" name="file">
+                    <label class="label-info">Destination:</label>
+                    <input type="text" value="/tmp" name="destination" id="destination">
+                    <button type="submit" class="btn btn-primary">upload</button>
+                </form>
+        </div>
+        <script src="js/vender/jquery-1.11.3.min.js"></script>
+        <script src="js/vender/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+        <script src="js/fileupload.js"></script>
+    </body>
+</html>
