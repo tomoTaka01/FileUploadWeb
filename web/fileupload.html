@@ -9,12 +9,19 @@
     <body>
         <div class="container">
             <h1>file upload sample</h1>
+            <h3>file upload（画面遷移）</h3>
                 <form method="POST" action="upload" enctype="multipart/form-data">
                     <input type="file" name="file">
                     <label class="label-info">Destination:</label>
                     <input type="text" value="/tmp" name="destination" id="destination">
                     <button type="submit" class="btn btn-primary">upload</button>
                 </form>
+            <h3>file upload (json)</h3>
+                    <input type="file" id="fileJson">
+                    <label class="label-info">Destination:</label>
+                    <input type="text" value="/tmp" id="destinationJson">
+                    <button class="btn btn-primary" id="uploadBtn">upload</button>
+                    <output id="uploadMsg"></output>
         </div>
         <script src="js/vender/jquery-1.11.3.min.js"></script>
         <script src="js/vender/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
