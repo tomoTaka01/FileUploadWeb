@@ -25,7 +25,7 @@ public class UploadResource {
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.TEXT_PLAIN)
-    public String getXXX(UploadInfo info) throws IOException{
+    public String uploadFile(UploadInfo info) throws IOException{
         String returnMsg = "";
         String fileType = info.getFileType();
         Path path = Paths.get(info.getDestination() + File.separator 
